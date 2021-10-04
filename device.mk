@@ -79,6 +79,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
     libldacBT_dec \
@@ -213,6 +215,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1 \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss.measurement_corrections@1.1 \
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0 \
+    android.hardware.gnss.visibility_control@1.0.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
@@ -297,6 +307,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
 
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0 \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.1 \
+    android.hardware.keymaster@4.1.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.vayu
@@ -337,6 +353,15 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml
+
+# Netd
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.2 \
+    android.hardware.neuralnetworks@1.2.vendor
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -385,6 +410,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp_policy/,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
 
+#Secure element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
@@ -427,6 +457,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_vayu/android.hardware.nfc.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_vayu/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_vayu/com.nxp.mifare.xml
+
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5 \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor
 
 # USB
 PRODUCT_PACKAGES += \
