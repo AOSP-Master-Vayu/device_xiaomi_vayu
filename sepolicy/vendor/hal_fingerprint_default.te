@@ -1,5 +1,7 @@
 allow hal_fingerprint_default fingerprint_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
+allow hal_fingerprint_default gf_fp_file:dir create_dir_perms;
+allow hal_fingerprint_default gf_fp_file:file create_file_perms;
 
 allow hal_fingerprint_default {
   fingerprint_device
