@@ -138,6 +138,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3 \
+    android.hardware.drm@1.3.vendor
+
 # DeviceSettings
 PRODUCT_PACKAGES += \
     XiaomiParts
@@ -360,8 +365,8 @@ PRODUCT_PACKAGES += \
 
 # Neural Networks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.2 \
-    android.hardware.neuralnetworks@1.2.vendor
+    android.hardware.neuralnetworks@1.3 \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # Overlays
 PRODUCT_PACKAGES += \
