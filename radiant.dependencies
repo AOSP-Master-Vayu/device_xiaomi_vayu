@@ -10,5 +10,5 @@
     "remote": "RadiantDevices",
     "revision": "twelve",
     "target_path": "kernel/xiaomi/vayu"
-  },
+  }
 ]
