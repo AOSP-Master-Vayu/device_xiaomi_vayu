@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "vendor_xiaomi_vayu",
+    "remote": "RadiantDevices",
+    "target_path": "vendor/xiaomi/vayu"
+  },
+  {
+    "repository": "kernel_xiaomi_vayu",
+    "remote": "RadiantDevices",
+    "target_path": "kernel/xiaomi/vayu"
+  },
+]
