@@ -30,6 +30,9 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 # Dynamic partitions setup
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/vayu/kernel-headers
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \

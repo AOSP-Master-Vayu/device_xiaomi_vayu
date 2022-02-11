@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/radiant_vayu.mk
+    $(LOCAL_DIR)/vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    radiant_vayu-eng \
-    radiant_vayu-userdebug \
-    radiant_vayu-user
+    vayu-eng \
+    vayu-userdebug \
+    vayu-user
